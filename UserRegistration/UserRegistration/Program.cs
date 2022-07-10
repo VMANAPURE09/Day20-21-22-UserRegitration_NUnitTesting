@@ -13,6 +13,8 @@ namespace UserRegistration
             ExceptionProblem validateUser = new ExceptionProblem();
             validateUser.validateFirstName("Vaibhav");
 
+            Console.WriteLine("--------------------");
+            validateUser.validateLastName("Manapure");
             Console.ReadKey();
         }
     }
