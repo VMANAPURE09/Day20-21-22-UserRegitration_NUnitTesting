@@ -11,14 +11,15 @@ namespace RegexTesting
         }
 
         [Test]
-        public void Test1()
+        public void CheckLastName()
         {
-            string FirstName = "Vaibhav";
+            string lastName = "Manapure";
             UserRegistration userregist = new UserRegistration();
-            var result = userregist.CheckFirsttName(FirstName);
+            var result = userregist.CheckLastName(lastName);
 
             //Assert
             Assert.IsTrue(result);
+
         }
     }
 }
