@@ -9,14 +9,14 @@ namespace UserRegistrationProgram
 {
     public class UserRegistration
     {
-        public bool CheckLastName(string lastName)
+        public bool CheckEmail(string email)
         {
 
-            string LastNamePattern = @"^[A-Z]{1}[a-zA-Z]{2,}$";
+            string EmailPattern = @"^[a-z][a-zA-Z0-9._-]{3,20}@[a-z]{3,10}.(com)$";
 
-            Regex lastnameregex = new Regex(LastNamePattern);
+            Regex Emailregex = new Regex(EmailPattern);
 
-            return lastnameregex.IsMatch(lastName);
+            return Emailregex.IsMatch(email);
         }
     }
 }

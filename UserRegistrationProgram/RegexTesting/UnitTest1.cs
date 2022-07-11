@@ -11,11 +11,11 @@ namespace RegexTesting
         }
 
         [Test]
-        public void CheckLastName()
+        public void CheckEmail()
         {
-            string lastName = "Manapure";
+            string email = "manapure.vaibhav542@gmail.com";
             UserRegistration userregist = new UserRegistration();
-            var result = userregist.CheckLastName(lastName);
+            var result = userregist.CheckEmail(email);
 
             //Assert
             Assert.IsTrue(result);
