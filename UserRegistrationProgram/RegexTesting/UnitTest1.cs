@@ -10,12 +10,13 @@ namespace RegexTesting
         {
         }
 
+        
         [Test]
-        public void CheckEmail()
+        public void CheckMobileNumber()
         {
-            string email = "manapure.vaibhav542@gmail.com";
+            string mobnumber = "91 9764510067";
             UserRegistration userregist = new UserRegistration();
-            var result = userregist.CheckEmail(email);
+            var result = userregist.CheckMobileNumber(mobnumber);
 
             //Assert
             Assert.IsTrue(result);
