@@ -14,7 +14,7 @@ namespace RegexTesting
         [Test]
         public void CheckUserPassword()
         {
-            string password = "VAibhavM12";
+            string password = "VAibhavM12@";
             UserRegistration userregist = new UserRegistration();
             var result = userregist.CheckUserPassword(password);
 
