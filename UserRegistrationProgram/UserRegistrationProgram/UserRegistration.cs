@@ -9,14 +9,14 @@ namespace UserRegistrationProgram
 {
     public class UserRegistration
     {
-        public bool CheckMobileNumber(string mobilenumber)
+        //UC5: method that check password should have minimum 8 characters
+        public bool CheckUserPassword(string password)
         {
 
-            string MobileNumberPattern = @"^[1-9]{2,}[' '][7-9]{1}[0-9]{9}$";
+            string PasswordPattern = @"^[a-zA-Z]{8,}$";
 
-            Regex MobileNumberregex = new Regex(MobileNumberPattern);
+            Regex Passwordregex = new Regex(PasswordPattern);
 
-            return MobileNumberregex.IsMatch(mobilenumber);
+            return Passwordregex.IsMatch(password);
         }
-    }
 }

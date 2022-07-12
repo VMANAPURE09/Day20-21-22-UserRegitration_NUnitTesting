@@ -7,11 +7,12 @@ namespace UserRegistrationProgram
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to User Registration Program - Regex N-Unit Testing");
-            Console.WriteLine("check MobileNo\n");
+            Console.WriteLine("check User Passowrd\n");
 
             UserRegistration userregistration = new UserRegistration();
-            bool checkmobnum = userregistration.CheckMobileNumber("91 9933222454");
-            Console.WriteLine(checkmobnum);
+            bool checkpassword = userregistration.CheckUserPassword("VaibhavM");
+            Console.WriteLine(checkpassword);
+
 
 
         }

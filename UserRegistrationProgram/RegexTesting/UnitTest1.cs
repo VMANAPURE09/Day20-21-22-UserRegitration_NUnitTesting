@@ -12,11 +12,11 @@ namespace RegexTesting
 
         
         [Test]
-        public void CheckMobileNumber()
+        public void CheckUserPassword()
         {
-            string mobnumber = "91 9764510067";
+            string password = "VaibhavM";
             UserRegistration userregist = new UserRegistration();
-            var result = userregist.CheckMobileNumber(mobnumber);
+            var result = userregist.CheckUserPassword(password);
 
             //Assert
             Assert.IsTrue(result);
