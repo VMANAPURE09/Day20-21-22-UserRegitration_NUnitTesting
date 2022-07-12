@@ -10,7 +10,7 @@ namespace UserRegistrationProgram
             Console.WriteLine("check User Passowrd\n");
 
             UserRegistration userregistration = new UserRegistration();
-            bool checkpassword = userregistration.CheckUserPassword("VAibhavM");
+            bool checkpassword = userregistration.CheckUserPassword("VAibhav12");
             Console.WriteLine(checkpassword);
 
 
