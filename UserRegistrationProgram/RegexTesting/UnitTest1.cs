@@ -12,11 +12,12 @@ namespace RegexTesting
 
         
         [Test]
-        public void CheckUserPassword()
+        public void ChecKEmailSample()
         {
-            string password = "VAibhavM12@";
+            string EmailSample = "abc.100@abc.com.au";
             UserRegistration userregist = new UserRegistration();
-            var result = userregist.CheckUserPassword(password);
+            var result = userregist.CheckEmailSample(EmailSample);
+
 
             //Assert
             Assert.IsTrue(result);

@@ -9,15 +9,15 @@ namespace UserRegistrationProgram
 {
     public class UserRegistration
     {
-        //UC8: Check the Password that should have min 8 characters with atleast 1 UpperCase,1 NumericNumber & 1 SpecialCharcter
-        public bool CheckUserPassword(string password)
+        //UC9:Check the Email That should Clear All Email Sample
+        public bool CheckEmailSample(string password)
         {
 
-            string PasswordPattern = @"^(?=.*[A-Z])(?=.*[@#$!%^&-+=()])(?=.*[0-9])(?=.*[a-z]).{8,}$";
+            string EmailPattern = @"^([a-z]{3}([\.\+\-0-9]*)@[a-z0-9]{1,}.[a-z]{3,}[.a-z]*)";
 
-            Regex Passwordregex = new Regex(PasswordPattern);
+            Regex Emailregex = new Regex(EmailPattern);
 
-            return Passwordregex.IsMatch(password);
+            return Emailregex.IsMatch(password);
         }
     }
 }

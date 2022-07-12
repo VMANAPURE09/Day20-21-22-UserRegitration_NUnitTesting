@@ -7,11 +7,11 @@ namespace UserRegistrationProgram
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to User Registration Program - Regex N-Unit Testing");
-            Console.WriteLine("check User Passowrd\n");
+            Console.WriteLine("Check Email Sample\n");
 
             UserRegistration userregistration = new UserRegistration();
-            bool checkpassword = userregistration.CheckUserPassword("VAibhav12@");
-            Console.WriteLine(checkpassword);
+            bool Checkemailsample = userregistration.CheckEmailSample("abc.100@abc.com.au");
+            Console.WriteLine(Checkemailsample);
 
 
 
