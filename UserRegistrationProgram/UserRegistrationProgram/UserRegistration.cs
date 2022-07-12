@@ -9,14 +9,15 @@ namespace UserRegistrationProgram
 {
     public class UserRegistration
     {
-        //UC5: method that check password should have minimum 8 characters
+        //UC6: method that check password should have minimum 8 characters and atleast 1 UpperCase
         public bool CheckUserPassword(string password)
         {
 
-            string PasswordPattern = @"^[a-zA-Z]{8,}$";
+            string PasswordPattern = @"^(?=.*[A-Z])[a-zA-Z]{8,}$";
 
             Regex Passwordregex = new Regex(PasswordPattern);
 
             return Passwordregex.IsMatch(password);
         }
+    }
 }
